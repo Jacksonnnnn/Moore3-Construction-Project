@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moore3 Construction</title>
+        <style>
+            * {
+                margin: 0 auto;
+            }
+            h1, h4 {
+                padding-left: 20px !important;
+            }
+            .navigation-bar {
+                background-color: #f34949;
+                top: 0px;
+                position: sticky;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                height: 100px;
+                z-index: 100;
+				border-bottom: 3px solid #a73333;
+            }
+            .branding {
+                float: left;
+                color: white;
+                padding-top: 10px;
+            }
+            .pagination {
+                float: right;
+                display: inline;
+                padding-top: 15px;
+                padding-right: 50px;
+            }
+            .pagination ul {
+                list-style-type: none;
+            }
+            .pagination li {
+                display: inline-block
+            }
+            a {
+                text-decoration: none;
+                color: #000 !important;
+                padding: 10px;
+            }
+            a:hover {
+                background-color: #ffffff !important;
+                border-radius: 15%;
+                color: #f34949 !important;
+            }
+            .active-link {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #ffffff !important;
+                border-radius: 15%;
+                color: #f34949 !important;
+            }
+			.main {
+				padding-bottom: 10px;
+			}
+			.info {
+				padding-top: 10px;
+				width: 75%;
+			}
+            .row {
+                margin: 0 auto !important;
+            }
+            .container-fluid {
+                padding: 0px !important;
+            }
+            .col {
+                padding: 0px !important;
+            }
+			form {
+				padding: 20px;
+			}
+            img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+                vertical-align: middle;
+                border-style: none;
+				height: 63.8vh;
+				width: auto;
+            }
+            .footer {
+                height: 60px;
+                clear: both;
+                border-top: solid 1px #cecece;
+                background-color: #f3f3f3;
+                padding: 15px 50px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/_vendor/bootstrap/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <nav>
+                <div class="branding">
+                    <h4>Moore3 Construction</h4>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="../index.html" style="color: #f34949;">Home</a>
+                        <li><a href="../about/index.html">About</a>
+                        <li><a href="../portfolio/index.html">Portfolio</a>
+                        <li class="active-link"><a href="#">Contact Us</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+			<div class="info">
+				<div class="alert alert-dismissible alert-danger">
+					<h5>Contact Information</h5><br>
+					<strong>Email: </strong> email@example.com<br>
+					<strong>Phone: </strong> +1 (xxx) xxx-xxx<br>
+					<strong>Address: </strong> 1234 Something Blvd.<br>
+				</div>
+			</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col image">
+                        <div class="image">
+							<img src="form img possibly.jpg" width=100% height=100%>
+                        </div>
+                    </div>
+                    <div class="col form">
+                        <form>
+                            <fieldset>
+                                <legend>Contact Us!</legend>
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="" class="form-control" id="name" aria-describedby="nameHelp" placeholder="John Doe">
+									<small id="nameHelp" class="form-text text-mute">Please enter your first and last name.</small>
+								</div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" aria-describedby="phoneHelp" placeholder="(xxx) xxx-xxx">
+                                    <small id="phoneHelp" class="form-text text-mute">We will never share your phone number, please enter the area code with your number.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="float: left;">&copy; 2018 Moore3 Construction</p>
+            <p style="float: right;">Made by Jackson Huse</p>
+        </div>
+    </body>
+</html>

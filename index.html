@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moore3 Construction</title>
+		<style>
+			* {
+				margin: 0 auto;
+			}
+			h1, h4 {
+				padding-left: 20px;
+			}
+			.navigation-bar {
+				background-color: #f34949;
+				top: 0px;
+				position: sticky;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				width: 100%;
+				height: 100px;
+				z-index: 100;
+				border-bottom: 3px solid #a73333;
+			}
+			.branding {
+				float: left;
+				color: white;
+				padding-top: 10px;
+			}
+			.pagination {
+				float: right;
+				display: inline;
+				padding-top: 15px;
+				padding-right: 50px;
+			}
+			.pagination ul {
+				list-style-type: none;
+			}
+			.pagination li {
+				display: inline-block
+			}
+			a {
+				text-decoration: none;
+				color: #000 !important;
+				padding: 10px;
+			}
+			a:hover {
+				background-color: #ffffff !important;
+				border-radius: 15%;
+				color: #f34949 !important;
+			}
+			.active {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: #ffffff !important;
+				border-radius: 15%;
+				color: #f34949 !important;
+			}
+			.parallax-header {
+				/* The image used */
+				background-image: url("header-image (2).jpg");
+
+				/* Set a specific height */
+				height: 100vh; 
+
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				border-bottom: solid 2px #000;
+			}
+			.col {
+				padding: 0px !important;
+			}
+			.quick-about {
+				padding: 20px;
+			}
+			.motto {
+				border-top: solid 1px #000;
+				clear: both;
+				width: 100%;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+			.big-effect, .small-effect {
+				padding: 10px;
+			}
+			.small-effect {
+				text-align: right;
+				padding-right: 300px;
+			}
+			.big-effect {
+				text-align: center;
+				padding-right: 300px;
+			}
+			.testimonials {
+				border-top: solid 1px #000;
+				padding-top: 10px;
+				height: 200px;
+				width: 100%;
+				padding-bottom: 425px;
+			}
+			.quote1, .quote2, .quote3 {
+				padding: 15px !important;
+			}
+			div.card-header img {
+				height: auto;
+			}
+			.footer {
+				height: 60px;
+				clear: both;
+				border-top: solid 1px #cecece;
+				background-color: #f3f3f3;
+				padding: 15px 50px;
+			}
+			.card {
+				flex-direction: unset !important;
+				height: 400px !important;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/_vendor/bootstrap/dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="navigation-bar">
+			<nav>
+				<div class="branding">
+					<h4>Moore3 Construction</h4>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li class="active"><a href="#" style="color: #f34949;">Home</a>
+						<li><a href="about/index.html">About</a>
+						<li><a href="portfolio/index.html">Portfolio</a>
+						<li><a href="contact-us/index.html">Contact Us</a>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="parallax-header">
+				<!--
+				<div class="down-arrow">
+					NEED DIRECTION
+				</div>
+				-->
+			</div>
+			<div class="container-fluid section2">
+				<div class="row">
+					<div class="col">
+						<div class="image">
+							<img src="quick-about img.jpg" width=100% height=100%>
+						</div>
+					</div>
+					<div class="col">
+						<div class="quick-about">
+							<h1>Something About Us</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a augue eros. Quisque ut augue sem. Aliquam sed ligula ultricies, luctus ipsum eu, aliquet est. Mauris ac turpis nec nulla scelerisque interdum. Morbi fermentum tellus vitae ipsum porttitor, quis ultricies ante eleifend. Nunc ut dolor dapibus, commodo ex sit amet, tincidunt ante. Nam ligula dolor, dapibus eu mauris vitae, fermentum faucibus odio.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="motto">
+				<div class="big-effect">
+					<h1>Hurricane Irma,</h1>
+				</div>
+				<div class="small-effect">
+					<p>we were there</p>
+				</div>
+				<div class="big-effect">
+					<h1>Hurricane Michael,</h1>
+				</div>
+				<div class="small-effect">
+					<p>we were there</p>
+				</div>
+				<h3>We are here, for you</h3>
+			</div>
+			<div class="container-fluid testimonials">
+				<div class="row">
+					<div class="col quote1">
+						<div class="card bg-light mb-3">
+						  <div class="card-header">
+							<img src="Profile Picture (guy).jpg" height=auto width=100% style="border-radius: 50%;">
+							<h3 style="text-align: center;">JOHN DOE</h3>
+						  </div>
+							<div class="card-body">
+								<p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+							</div>
+						</div>
+					</div>
+					<div class="col quote2">
+						<div class="card bg-light mb-3">
+						  <div class="card-header">
+							<img src="Profile Picture (gal).jpg" height=auto width=100% style="border-radius: 50%;">
+							<h3 style="text-align: center;">JANE DOE</h3>
+						  </div>
+							<div class="card-body">
+								<p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+							</div>
+						</div>
+					</div>
+					<div class="col quote3">
+						<div class="card bg-light mb-3">
+						  <div class="card-header">
+							<img src="Profile Picture (guy).jpg" height=auto width=100% style="border-radius: 50%;">
+							<h3 style="text-align: center;">NICK SMITH</h3>
+						  </div>
+							<div class="card-body">
+								<p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p style="float: left;">&copy; 2018 Moore3 Construction</p>
+			<p style="float: right;">Made by Jackson Huse</p>
+		</div>
+	</body>
+</html>
