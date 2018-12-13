@@ -6,6 +6,9 @@
 			* {
 				margin: 0 auto;
 			}
+			h1 {
+				padding-left: 20px !important;
+			}
 			.navigation-bar {
 				background-color: #f34949;
 				top: 0px;
@@ -19,7 +22,6 @@
 			.branding {
 				float: left;
 				color: white;
-				padding-left: 50px;
 				padding-top: 10px;
 			}
 			.pagination {
@@ -51,8 +53,20 @@
 				border-radius: 15%;
 				color: #f34949 !important;
 			}
+			.row {
+				margin: 0 auto !important;
+			}
+			.container-fluid {
+				padding: 0px !important;
+			}
+			.col {
+				padding: 0px !important;
+			}
 			.section1 {
 				border-bottom: solid 1px #000;
+			}
+			.motto p, .vision p {
+				padding: 20px;
 			}
 			.vision {
 				background-color: #000;
@@ -63,6 +77,12 @@
 				padding-bottom: 10px;
 				border-bottom: solid 1px #000;
 			}
+			.quick-about {
+				position: absolute;
+				top: 50%;
+				left: 44%;
+				transform: translate(-50%, -50%);
+			}
 			.team {
 				padding-top: 10px;
 				padding-bottom: 10px;
@@ -71,37 +91,58 @@
 			.team1, .team2 {
 				padding-top: 10px;
 			}
+			.team-member {
+				position: relative;
+			}
 			.team-member img {
+				opacity: 1;
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-				height: 200px;
-				width: 200px;
+				height: 400px;
+				width: 400px;
 				border-radius: 15%;
+				transition: .5s ease;
+				backface-visibility: hidden;
+			}
+			.team-member img:hover {
+				opacity: 0.4;
+			}
+			.middle {
+				transition: .5s ease;
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+			.team-member:hover .middle {
+				opacity: 1;
+			}
+			.text {
+				background-color: #d64343;
+				color: white;
+				font-size: 16px;
+				padding: 16px 32px;
 			}
 			.testimonials {
 				padding-top: 10px;
 			}
-			footer {
+			.quote1, .quote2, .quote3 {
+				padding: 15px !important;
+			}
+			.footer {
 				height: 60px;
 				clear: both;
 				border-top: solid 1px #cecece;
 				background-color: #f3f3f3;
 				padding: 15px 50px;
 			}
-			.breadcrumbs {
-				width: 100%;
-				background-color: #f3f3f3 !important;
-				height: 100px;
-			}
-			.page {
-				float: left;
-				width: 50%;
-				background-color: #f3f3f3;
-			}
-			.breads {
-				float: right;
-				width: 50%;
+			.card {
+				flex-direction: unset !important;
+				height: 400px !important;
 			}
 		</style>
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/_vendor/bootstrap/dist/css/bootstrap.min.css">
@@ -157,12 +198,21 @@
 				<div class="team1 row justify-content-center">
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 1 </div>
+						</div>
 					</div>
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 2 </div>
+						</div>
 					</div>
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 3 </div>
+						</div>
 					</div>
 				</div>
 				<div>
@@ -171,12 +221,21 @@
 				<div class="team2 row justify-content-center">
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 4 </div>
+						</div>
 					</div>
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 5 </div>
+						</div>
 					</div>
 					<div class="col-sm team-member">
 						<img src="Profile Picture.jpg">
+						<div class="middle">
+							<div class="text">John Doe 6 </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -219,9 +278,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="footer">
+			<p style="float: left;">&copy; 2018 Moore3 Construction</p>
+			<p style="float: right;">Made by Jackson Huse</p>
+		</div>
 	</body>
-	<footer>
-		<p style="float: left;">&copy; 2018 Moore3 Construction</p>
-		<p style="float: right;">Made by Jackson Huse</p>
-	</footer>
 </html>

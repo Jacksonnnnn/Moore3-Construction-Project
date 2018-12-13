@@ -60,14 +60,21 @@
 				padding-top: 10px;
 			}
 			.piece img {
+                opacity: 1;
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-				height: 200px;
-				width: 200px;
+				height: 370px;
+				width: 370px;
 				border-radius: 15%;
 			}
-			footer {
+            .piece img:hover {
+                opacity: 0.5;
+            }
+            .modal {
+                background-color: rgba(0, 0, 0, 0.60);
+            }
+			.footer {
 				height: 60px;
 				clear: both;
 				border-top: solid 1px #cecece;
@@ -98,32 +105,211 @@
 		<div class="main">
 			<div class="container-fluid portfolio">
 				<div class="port-1 row justify-content-center">
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-1" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-2" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-3" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
 				</div>
 				<div class="port-2 row justify-content-center">
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-4" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-5" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
-					<div class="col-sm piece">
-						<img src="Profile Picture.jpg">
+					<div id="port-6" class="col-sm piece">
+						<img src="placeholder-862x646.png">
 					</div>
 				</div>
+
+
+
+				<!--
+					MODALS TO PORTFOLIO PIECES
+				-->
+
+
+
+            	<!--   MODAL1   -->
+				<div id="pop1" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 1 </h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--   MODAL2   -->
+				<div id="pop2" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 2 </h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--   MODAL3   -->
+				<div id="pop3" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 3 </h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--   MODAL4   -->
+				<div id="pop4" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 4</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--   MODAL5   -->
+				<div id="pop5" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 5</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--   MODAL6   -->
+				<div id="pop6" class="modal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Example Portfolio 6</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span class="close" aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Example Portfolio Body (probably explanation and image)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <script>
+                    var mod1 = document.getElementById('pop1');
+                    var div1 = document.getElementById("port-1");
+
+                    var mod2 = document.getElementById('pop2');
+                    var div2 = document.getElementById("port-2");
+
+                    var mod3 = document.getElementById('pop3');
+                    var div3 = document.getElementById("port-3");
+
+                    var mod4 = document.getElementById('pop4');
+                    var div4 = document.getElementById("port-4");
+
+                    var mod5 = document.getElementById('pop5');
+                    var div5 = document.getElementById("port-5");
+
+                    var mod6 = document.getElementById('pop6');
+                    var div6 = document.getElementById("port-6");
+
+                    div1.onclick = function() {
+                        mod1.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod1)
+                                mod1.style.display = "none";
+                        }
+                    }
+                    div2.onclick = function() {
+                        mod2.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod2)
+                                mod2.style.display = "none";
+                        }
+                    }
+                    div3.onclick = function() {
+                        mod3.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod3)
+                                mod3.style.display = "none";
+                        }
+                    }
+                    div4.onclick = function() {
+                        mod4.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod4)
+                                mod4.style.display = "none";
+                        }
+                    }
+                    div5.onclick = function() {
+                        mod5.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod5)
+                                mod5.style.display = "none";
+                        }
+                    }
+                    div6.onclick = function() {
+                        mod6.style.display = "block";
+
+                        window.onclick = function(event) {
+                            if (event.target == mod6)
+                                mod6.style.display = "none";
+                        }
+                    }
+                </script>
 			</div>
 		</div>
+        <div class="footer">
+            <p style="float: left;">&copy; 2018 Moore3 Construction</p>
+            <p style="float: right;">Made by Jackson Huse</p>
+        </div>
 	</body>
-	<footer>
-		<p style="float: left;">&copy; 2018 Moore3 Construction</p>
-		<p style="float: right;">Made by Jackson Huse</p>
-	</footer>
 </html>
